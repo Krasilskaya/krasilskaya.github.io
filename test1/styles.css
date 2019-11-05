@@ -1,0 +1,139 @@
+body{
+    background: #85a5d4;
+    font-family: "Roboto";
+}
+.block{
+    max-width: 900px;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow:   0 10px 20px 5px rgba(0,0,0,0.2);
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.block__item{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+.block__item:hover{
+    background: rgba(167,167,168,0.2);
+}
+.block__item-ico{
+    height: 60px;
+}
+.block__item-title{
+    text-transform: uppercase;
+    color: #5572d6;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+.block__item-text{
+    font-size: 11px;
+    color: #a7a7a8;
+    font-weight: 400;
+    max-width: 200px;
+    text-align: center;
+    line-height: 1.5;
+}
+.block__item-price{
+    font-size: 30px;
+    color: #5572d6;
+    font-weight: 700;
+    line-height: 0.5;
+}
+.top-text{
+    font-size: 15px;
+    vertical-align: top;
+    font-weight: 500;
+}
+.bottom-text{
+    font-size: 15px;
+    font-weight: 500;
+}
+.block__button{
+    border: none;
+    height: 30px;
+    background: #5572d6;
+    width: 180px;
+    color: #ffffff;
+    font-size: 11px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.popup{
+    background: rgba(42, 40, 79, 0.44);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.popup__content{
+    background-color: #ffffff;
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popup-close{
+    position: absolute;
+    width: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup-button{
+    border: none;
+    height: 30px;
+    background: #5572d6;
+    width: 180px;
+    color: #ffffff;
+    font-size: 11px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.popup__card>.block__item:hover{
+    background: none;
+}
+.popup__card>.block__item>.block__item-text{
+    max-width: 90%;
+}
+@media(max-width: 480px){
+    .block{
+        max-width: 300px;
+    }
+    .block__item{
+        padding-bottom: 15px;
+    }
+    .block__item-title{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .block__item-price{
+        margin-top: 10px;
+    }
+    .block__button{
+        margin-top: 0;
+    }
+    .popup__content{
+        max-width: 350px;
+    }
+    .popup__title{
+        margin-bottom: 0;
+    }
+}
